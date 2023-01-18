@@ -1,0 +1,106 @@
+.item_list{
+    position: relative;
+    display: flex;
+    width: calc(100% / 3);
+    flex-direction: column;
+}
+.item_list .img_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.item_list .img_box .title_img{
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: all .5s;
+    transform: translateX(-50%);
+}
+.item_list .img_box .item_img{
+    width: 60%;
+    margin-top: 135px;
+    transition: all .5s;
+}
+.item_list .img_box .sub_img{
+    width: 60%;
+    position: absolute;
+    right: 20%;
+    bottom: 30%;
+    transition: all .5s;
+    opacity: 0;
+    z-index: -1;
+}
+.item_list .img_box .cir_img{
+    position: absolute;
+    right: 43px;
+    top: 114px;
+    width: 15%;
+    opacity: 0;
+    transition: all .5s;
+}
+.item_list .info_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    text-align: center;
+}
+/* hover */
+.item_list .img_box:hover .title_img{
+    transform: translate(-50%,-40px);
+}
+.item_list .img_box:hover .item_img{
+    transform: scale(.8);
+    opacity: 0;
+}
+.item_list .img_box:hover .sub_img{
+    opacity: 1;
+    z-index: 99;
+    transform: scale(1.1);
+}
+.item_list .img_box:hover .cir_img{
+    opacity: 1;
+}
+/* 반응형 */
+@media screen and (max-width: 1130px) {
+    .item_list .info_desc{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 911px) {
+    .item_list .info_desc{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .item_list{
+        width: calc(100% / 2);
+    }
+    .item_list .img_box .item_img{
+        margin-top: 95px;
+    }
+    .item_list .img_box .sub_img{
+        bottom: 38%;
+    }
+    .item_list .img_box .cir_img{
+        right: 43px;
+        top: 97px;
+        width: 11%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .item_list .img_box .cir_img{
+        right: 29px;
+        top: 82px;
+    }
+    .item_list .img_box .item_img{
+        margin-top: 85px;
+    }
+    .item_list .img_box .sub_img{
+        bottom: 40%;
+    }
+}

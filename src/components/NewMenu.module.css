@@ -1,0 +1,162 @@
+.new_menu{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.new_menu .bg_box{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 140px;
+}
+.new_menu h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    font-weight: 800;
+}
+.new_menu .item_info{
+    position: relative;
+}
+.new_menu .title_img{
+    width: 33%;
+    transform: translateX(137px);
+}
+.new_menu .desc_box{
+    transform: translateX(137px);
+}
+.new_menu .title{
+    font-size: 27px;
+    font-weight: 800;
+}
+.new_menu .desc{
+    width: 250px;
+    margin-top: 30px;
+    font-weight: 600;
+    word-break: keep-all;
+}
+.new_menu .link_box{
+    margin-top: 30px;
+    width: 165px;
+    height: 60px;
+    background: inherit;
+    border-radius: 60px;
+    line-height: 60px;
+    font-size: 19px;
+    font-weight: 800;
+    border: 2px solid #000;
+    text-align: left;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+}
+.new_menu .link_box div{
+    background: url(../../public/assets/EGGDROP/right.png) no-repeat center / 35px;
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.new_menu .link_box:hover div{
+    background: url(../../public/assets/EGGDROP/right-white.png) no-repeat center / 35px;
+}
+.new_menu .link_box:hover{
+    background-color: #ea0029;
+    color: #fff;
+    border: 2px solid #ea0029;
+}
+.new_menu .item{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 51%;
+    z-index: 9999;
+}
+.new_menu .cir_img{
+    position: absolute;
+    right: 0;
+    top: -140px;
+    width: 30%;
+    z-index: 99;
+    animation: rotate 8s linear infinite forwards;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 847px) {
+    .new_menu .title_img{
+        width: 28%;
+    }
+    .new_menu .title{
+        font-size: 21px;
+        font-weight: 800;
+    }
+    .new_menu .desc{
+        width: 237px;
+        font-size: 14px;
+    }
+    .new_menu h2{
+        font-size: 37px;
+    }
+    .new_menu .link_box{
+        margin-top: 51px;
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+        font-weight: 900;
+    }
+    .new_menu .item{
+        width: 42%;
+        top: 91px;
+    }
+    .new_menu .cir_img{
+        top: -17px;
+    }
+}
+@media screen and (max-width: 665px) {
+    .new_menu .title_img{
+        transform: translateX(67px);
+    }
+    .new_menu .desc_box{
+        transform: translateX(67px);
+    }
+}
+@media screen and (max-width: 555px) {
+    .new_menu .title{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .new_menu .desc{
+        width: 194px;
+        font-size: 13px;
+    }
+    .new_menu .link_box{
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 13px;
+        padding-left: 20px;
+    }
+    .new_menu .link_box div{
+        background: url(../../public/assets/EGGDROP/right.png) no-repeat center / 29px;
+        width: 30px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .new_menu .item{
+        width: 42%;
+        top: 39px;
+    }
+    .new_menu h2{
+        font-size: 27px;
+    }
+}

@@ -1,0 +1,14 @@
+.media{
+    margin-bottom: 100px;
+}
+.media h2{
+    font-size: 46px;
+    text-align: center;
+}
+.media .youtube{
+    width: 100%;
+    margin: auto;
+}
+.media section{
+    text-align: center;
+}
